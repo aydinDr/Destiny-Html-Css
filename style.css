@@ -9,6 +9,10 @@ font-family: 'Poppins',sans-serif; */
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* değişkenler */
 
 :root {
@@ -234,6 +238,281 @@ section {
     width: 200px;
 }
 
+/* liste alanı */
+
+.steps-sec-info {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.steps-sec-info h2 {
+    max-width: 400px;
+}
+
+.steps-sec-info p {
+    max-width: 400px;
+}
+
+#steps-sec {
+    margin: 50px 0;
+}
+
+#steps-sec li {
+    margin-top: 40px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid gray;
+    padding-bottom: 40px;
+}
+
+
+
+#steps-sec li h1 span {
+    color: gray;
+    font-weight: 400;
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+#steps-sec li img {
+    width: 50px;
+}
+
+/* projeler sayfası */
+
+.welcome {
+    padding: 100px;
+    background-image: linear-gradient(45deg, #fa8bff 0%, #2bd2ff 52%, #2bff88 90%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    max-width: 1300px;
+    font-size: 56px;
+}
+
+/* neler yapıyoruz alanı */
+
+#what-sec {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.what-info {
+    max-width: 400px;
+}
+
+.what-info h1 {
+    margin-bottom: 50px;
+}
+
+.what-cards {
+    display: flex;
+    gap: 100px;
+}
+
+.what-card {
+    min-width: 200px;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    align-items: center;
+    background-color: #323443;
+    border-radius: 10px;
+    padding: 30px 20px;
+    position: relative;
+}
+
+.what-card img {
+    position: absolute;
+    width: 50px;
+    top: -50px;
+}
+
+/* projeler alanı */
+
+#projects-sec {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.projects {}
+
+.project {
+    display: flex;
+    gap: 30px;
+}
+
+.project-image {
+    background-color: #323443;
+    padding: 40px 60px 0;
+    display: flex;
+    align-items: end;
+    position: relative;
+}
+
+.project-image img {
+    cursor: pointer;
+}
+
+.project-image:hover {
+    background-image: linear-gradient(45deg, #fa8bff 0%, #2bd2ff)
+}
+
+.project-image .icon {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    background-color: #494a57;
+    display: grid;
+    place-items: center;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.project-info {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 700px;
+}
+
+/* takım sayfası */
+
+#top-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.top-section-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.top-section-left h1 {}
+
+.top-section-left .auction {
+    padding: 20px;
+    /* CAM EFEKTİ */
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.9px);
+    -webkit-backdrop-filter: blur(3.9px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+}
+
+.top-section-left .counter {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 20px;
+}
+
+.top-section-left .count {
+    background-color: rgb(0, 0, 21);
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.top-section-left .buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.top-section-left .buttons button {
+    background-color: transparent;
+    color: white;
+    border: 1px solid var(--green);
+    cursor: pointer;
+}
+
+.top-section-left .buttons button:hover {
+    background-color: var(--green);
+}
+
+.top-section-right img {
+    border-radius: 10px;
+}
+
+/* resimler alanı */
+#takim-images {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    text-align: center;
+}
+
+.img-wrapper {
+    position: relative;
+}
+
+.img-wrapper h1 {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+    /* CAM EFEKTİ */
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.9px);
+    -webkit-backdrop-filter: blur(3.9px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.img-wrapper img {
+    width: 400px;
+    border-radius: 20px;
+}
+
+/* bağış alanı */
+
+#donate-sec {
+    display: inline-block;
+    left: 50%;
+    transform: translateX(-50%);
+    position: relative;
+}
+
+.donate-sec-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.donate-sec-content {
+    display: grid;
+    grid-template-columns: repeat(4, 200px);
+    justify-content: center;
+    gap: 40px;
+}
+
+.donate-sec-people {
+    display: flex;
+    gap: 10px;
+    background-color: rgb(106, 0, 106);
+    color: white;
+    padding: 10px;
+    border-radius: 60px;
+}
+
+.donate-sec-people img {
+    width: 50px;
+    border-radius: 50%;
+}
+
 /* resposive yapılar */
 
 @media (max-width:800px) {
@@ -278,6 +557,13 @@ section {
         font-size: 13px;
         padding: 4px 6px;
     }
+
+    /* bağış alanı */
+    .donate-sec-content {
+        grid-template-columns: repeat(2, 200px) !important;
+
+    }
+
 }
 
 @media (max-width:1000px) {
@@ -298,7 +584,34 @@ section {
     .card {
         max-width: 400px;
     }
+
+    /* projeler sayfası */
+
+    .welcome {
+        font-size: 40px;
+        padding: 100px 20px;
+    }
+
+    #top-section {
+        flex-direction: column;
+    }
+
+    .top-section-right {
+        order: -1;
+    }
+
+    .top-section-left .button {
+        font-size: 15px;
+    }
+
+    /* bağış alanı */
+    .donate-sec-content {
+        grid-template-columns: repeat(3, 200px);
+
+    }
 }
+
+
 
 @media (max-width:1200px) {
     #image-sec {
@@ -309,10 +622,71 @@ section {
     .window {
         height: 300px;
     }
+
+    /* neler yapıyoruz alanı */
+    #what-sec {
+        flex-direction: column;
+        align-items: center;
+        gap: 100px;
+    }
+
+    .what-info {
+        max-width: 600px;
+    }
+
+    .what-cards {
+        gap: 20px;
+    }
+
+    /* projeler */
+    .project {
+        flex-direction: column;
+    }
+
+    .project-info {
+        order: -1;
+    }
+
+    .project-image {
+        padding: 20px 100px 0;
+    }
+
+    /* resimler */
+
+    #takim-images {
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+}
+
+
+
+@media (max-width:1500px) {
+    #takim-images img {
+        width: 300px;
+    }
 }
 
 @media (min-width:1000px) {
     section {
         padding: 100px;
+        justify-content: center;
+    }
+}
+
+@media (max-width:500px) {
+    .project-image {
+        padding: 0 30px;
+        justify-content: center;
+    }
+
+    .project-image img {
+        width: 100%;
+    }
+
+    .what-cards {
+        flex-direction: column;
+        gap: 90px;
     }
 }
